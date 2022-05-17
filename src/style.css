@@ -1,1 +1,8 @@
 /* styles go here */
+.formField {
+  margin: 10px;
+}
+
+.fieldset {
+  margin: 20px;
+}

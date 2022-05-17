@@ -13,5 +13,156 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form action="submit">
+      <fieldset class="fieldset">
+        <legend>Peronal information</legend>
+        <div class="formField">
+          <label for="surname">Surname:</label>
+          <input
+           type="text"
+           name="surname"
+           id="surname"
+          >
+        </div>
+        <div class="formField">
+          <label for="textname">Name:</label>
+          <input
+           type="text"
+           id="textname"
+           name="name"
+          >
+        </div>
+        <div class="formField">
+          <label for="howOldAreU">How old are u?</label>
+          <input 
+               type="number"
+               value="12"
+               min="1"
+               max="100"
+               name="number of years"
+               id="howOldAreU"
+          >
+        </div>
+        <div class="formField">
+          <label for="dateOfBirth">Full date of birth:</label>
+          <input
+           type="date"
+           name="date of birth"
+           id="dateOfBirth"
+          >
+        </div>
+        <div class="formField">
+          <label for="terms">
+                  I accept all terms and conditions
+          </label>
+          <input
+           type="checkbox"
+           id="terms"
+           name="checkbox for terms"
+          >
+        </div> 
+      </fieldset>
+    </form>
+    <form action="submit">
+      <fieldset class="fieldset">
+        <legend>Registration</legend>
+        <div class="formField">
+          <label for="email">Email:</label>
+          <input 
+          type="email" 
+          placeholder="email@example.com"
+          name="email"
+          required
+          id="email"
+          >
+        </div>
+        <div class="formField"> 
+          <label for="password">Password:</label>
+          <input 
+           type="password"
+           name="password"
+           id="password"
+           required
+          >
+        </div>
+      </fieldset>
+    </form>
+    <form action="submit">
+      <fieldset class="fieldset">
+        <legend>An interesting fact about you!</legend>
+        <div class="radioButton">
+          <label for="radiobutton1">Do you love cats?</label>
+          <input 
+                type="radio"
+                id="radiobutton1"
+                value="yes"
+                name="radio"
+          >
+          <label for="radiobutton1">Yes</label>
+          <input 
+            type="radio"
+            id="radiobutton2"
+            value="yes"
+            name="radio"
+          >
+          <label for="radiobutton2">No</label>
+        </div>
+        <label class="formField">
+              What is your favorite colour?
+          <input 
+            type="color"
+            name="color"
+          >
+        </label>
+        <div class="formField">
+          <label for="time">What time do you go to bed?</label>
+          <input
+           type="time"
+           id="time"
+           name="timeToBed"
+          >
+        </div>
+        <div class="formField">
+          <label for="selctCars">What is your favorite car?</label>
+          <select id="selctCars" multiple>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </div>
+        <div class="formField">
+          <label for="range">How do you rate your work?</label>
+          <input
+             type="range"
+             id="range"
+             name="range"
+          >
+        </div>
+      </fieldset>
+    </form>
+    <form action="submit">
+      <fieldset class="fieldset">
+        <legend>additional Info:</legend>
+        <label class="formField">
+              Coments: 
+          <textarea
+            name="fedback" 
+            id="textarea" 
+            cols="30"
+            rows="10"
+          ></textarea>
+        </label>
+        <div class="formField">
+              Woud you recomend us?
+          <select>
+            <option for="radiobutton1">yes</option>
+            <option for="radiobutton2">no</option>
+          </select>
+        </div>
+      </fieldset>
+    </form>
+    <button type="submit">Submit</button>
   </body>
 </html>
+
+
