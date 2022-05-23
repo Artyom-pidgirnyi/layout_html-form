@@ -13,9 +13,9 @@
   <body>
     <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
-    <form action="submit">
+    <form action=" https://mate-academy-form-lesson.herokuapp.com/create-application">
       <fieldset class="fieldset">
-        <legend>Peronal information</legend>
+        <legend>Personal information</legend>
         <div class="formField">
           <label for="surname">Surname:</label>
           <input
@@ -35,30 +35,30 @@
         <div class="formField">
           <label for="howOldAreU">How old are u?</label>
           <input 
-               type="number"
-               value="12"
-               min="1"
-               max="100"
-               name="number of years"
-               id="howOldAreU"
+            type="number"
+            value="12"
+            min="1"
+            max="100"
+            name="number of years"
+            id="howOldAreU"
           >
         </div>
         <div class="formField">
           <label for="dateOfBirth">Full date of birth:</label>
           <input
            type="date"
-           name="date of birth"
+           name="birthdate"
            id="dateOfBirth"
           >
         </div>
         <div class="formField">
           <label for="terms">
-                  I accept all terms and conditions
+            I accept all terms and conditions
           </label>
           <input
            type="checkbox"
            id="terms"
-           name="checkbox for terms"
+           name="terms"
           >
         </div> 
       </fieldset>
@@ -69,11 +69,11 @@
         <div class="formField">
           <label for="email">Email:</label>
           <input 
-          type="email" 
-          placeholder="email@example.com"
-          name="email"
-          required
-          id="email"
+            type="email" 
+            placeholder="email@example.com"
+            name="email"
+            required
+            id="email"
           >
         </div>
         <div class="formField"> 
@@ -142,7 +142,7 @@
     </form>
     <form action="submit">
       <fieldset class="fieldset">
-        <legend>additional Info:</legend>
+        <legend>Additional info:</legend>
         <label class="formField">
               Coments: 
           <textarea
@@ -155,8 +155,8 @@
         <div class="formField">
               Woud you recomend us?
           <select>
-            <option for="radiobutton1">yes</option>
-            <option for="radiobutton2">no</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </div>
       </fieldset>
