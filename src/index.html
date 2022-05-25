@@ -79,10 +79,10 @@
         <div class="formField"> 
           <label for="password">Password:</label>
           <input 
-           type="password"
-           name="password"
-           id="password"
-           required
+            type="password"
+            name="password"
+            id="password"
+            required
           >
         </div>
       </fieldset>
@@ -93,22 +93,22 @@
         <div class="radioButton">
           <label for="radiobutton1">Do you love cats?</label>
           <input 
-                type="radio"
-                id="radiobutton1"
-                value="yes"
-                name="radio"
+            type="radio"
+            id="radiobutton1"
+            value="yes"
+            name="radio"
           >
           <label for="radiobutton1">Yes</label>
           <input 
             type="radio"
             id="radiobutton2"
-            value="yes"
+            value="no"
             name="radio"
           >
           <label for="radiobutton2">No</label>
         </div>
         <label class="formField">
-              What is your favorite colour?
+          What is your favorite colour?
           <input 
             type="color"
             name="color"
@@ -117,14 +117,14 @@
         <div class="formField">
           <label for="time">What time do you go to bed?</label>
           <input
-           type="time"
-           id="time"
-           name="timeToBed"
+            type="time"
+            id="time"
+            name="timeToBed"
           >
         </div>
         <div class="formField">
-          <label for="selctCars">What is your favorite car?</label>
-          <select id="selctCars" multiple>
+          <label for="selectCars">What is your favorite car?</label>
+          <select name="selectCars" id="selectCars" multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="lada">Lada</option>
@@ -133,9 +133,11 @@
         <div class="formField">
           <label for="range">How do you rate your work?</label>
           <input
-             type="range"
-             id="range"
-             name="range"
+            type="range"
+            id="range"
+            name="range"
+            min="10"
+            max="100"
           >
         </div>
       </fieldset>
@@ -144,17 +146,17 @@
       <fieldset class="fieldset">
         <legend>Additional info:</legend>
         <label class="formField">
-              Coments: 
+              Comments: 
           <textarea
             name="fedback" 
             id="textarea" 
-            cols="30"
-            rows="10"
+            cols="20"
+            rows="2"
           ></textarea>
         </label>
         <div class="formField">
               Woud you recomend us?
-          <select>
+          <select name="selected">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
